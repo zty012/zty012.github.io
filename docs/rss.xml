@@ -1,5 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZTY</title><link>https://zty012.de</link><description>ZTY 的个人博客</description><copyright>ZTY</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/89395757?v=4</url><title>avatar</title><link>https://zty012.de</link></image><lastBuildDate>Tue, 16 Jul 2024 04:58:38 +0000</lastBuildDate><managingEditor>ZTY</managingEditor><ttl>60</ttl><webMaster>ZTY</webMaster><item><title>Zygisk 无法启用</title><link>https://zty012.de/post/Zygisk%20-wu-fa-qi-yong.html</link><description>https://github.com/sunshine0523/Mi-Freeform/issues/51&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZTY</title><link>https://zty012.de</link><description>ZTY 的个人博客</description><copyright>ZTY</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/89395757?v=4</url><title>avatar</title><link>https://zty012.de</link></image><lastBuildDate>Tue, 16 Jul 2024 12:07:11 +0000</lastBuildDate><managingEditor>ZTY</managingEditor><ttl>60</ttl><webMaster>ZTY</webMaster><item><title>此设备未经过 Play 保护认证解决方法</title><link>https://zty012.de/post/ci-she-bei-wei-jing-guo-%20Play%20-bao-hu-ren-zheng-jie-jue-fang-fa.html</link><description>1. 打开 [设备注册](https://www.google.com/android/uncertified/)&#13;
+2. 方法一：开启开发者模式中的 `以 Root 权限调试`，在电脑上运行页面上提示的命令获取 GMS ID&#13;
+   方法二：下载 DeviceID 软件获取 GMS ID&#13;
+3. 把获取到的 ID 输入进网页进行注册&#13;
+4. 重启手机&#13;
+5. 打开一次 Google 登录页面，提示未经过认证，等待一会&#13;
+6. 再打开一次登录页面，成功。</description><guid isPermaLink="true">https://zty012.de/post/ci-she-bei-wei-jing-guo-%20Play%20-bao-hu-ren-zheng-jie-jue-fang-fa.html</guid><pubDate>Tue, 16 Jul 2024 12:06:43 +0000</pubDate></item><item><title>Zygisk 无法启用</title><link>https://zty012.de/post/Zygisk%20-wu-fa-qi-yong.html</link><description>https://github.com/sunshine0523/Mi-Freeform/issues/51&#13;
 &#13;
 搞了半天发现是米窗干的。</description><guid isPermaLink="true">https://zty012.de/post/Zygisk%20-wu-fa-qi-yong.html</guid><pubDate>Tue, 16 Jul 2024 04:58:15 +0000</pubDate></item><item><title>Magisk 启用 Zygisk</title><link>https://zty012.de/post/Magisk%20-qi-yong-%20Zygisk.html</link><description>先禁用所有模块，在首页右上角设置里面启用 Zygisk，重启手机&#13;
 &#13;
