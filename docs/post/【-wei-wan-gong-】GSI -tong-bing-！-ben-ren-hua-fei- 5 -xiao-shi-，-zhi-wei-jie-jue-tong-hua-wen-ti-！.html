@@ -92,9 +92,10 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>卧槽，我 5G 摇身一边，变成 3G 了！？？</p>
 <p>原来，网络类型里面，斜杠划分了多个制式，优先级从前往后，系统检测到了通话的 <code class="notranslate">TD-SCDMA</code> 但是没有检测到网络的 <code class="notranslate">LTE</code> 等类型，具体可以看列表上面的 <code class="notranslate">数据服务类型</code> 和 <code class="notranslate">语音网络类型</code></p>
 <h2>突破口找到了！如何解决？</h2>
-<blockquote>
-<p>等我研究好了继续写这片文章</p>
-</blockquote></div>
+<p>打开 MT，在 <code class="notranslate">/system</code> 中搜索文件内容 <code class="notranslate">GSM/WCDMA/LTE</code>，显然 <code class="notranslate">TeleService.apk</code> 符合各项条件，打开 dex 文件，显然在 <code class="notranslate">TelephonyShellCommand</code> 14687 行，写了一些通话类型的 bitmask 示例，在第二条注释中写道 <code class="notranslate">Reference the NetworkTypeBitMask</code>，继续在 dex 中搜索 <code class="notranslate">NetworkTypeBitMask</code>……搜不到？</p>
+<h2>已经不是 apk 里的问题了</h2>
+<p>接下来请出 唯 一 真 神——AOSP 源代码！</p>
+<p><a href="https://cs.android.com/" rel="nofollow">https://cs.android.com/</a></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>

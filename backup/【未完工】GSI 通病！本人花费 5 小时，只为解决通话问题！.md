@@ -30,4 +30,10 @@
 
 ## 突破口找到了！如何解决？
 
-> 等我研究好了继续写这片文章
+打开 MT，在 `/system` 中搜索文件内容 `GSM/WCDMA/LTE`，显然 `TeleService.apk` 符合各项条件，打开 dex 文件，显然在 `TelephonyShellCommand` 14687 行，写了一些通话类型的 bitmask 示例，在第二条注释中写道 `Reference the NetworkTypeBitMask`，继续在 dex 中搜索 `NetworkTypeBitMask`……搜不到？
+
+## 已经不是 apk 里的问题了
+
+接下来请出 唯 一 真 神——AOSP 源代码！
+
+https://cs.android.com/
