@@ -1,5 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZTY</title><link>https://zty012.de</link><description>ZTY 的个人博客</description><copyright>ZTY</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/89395757?v=4</url><title>avatar</title><link>https://zty012.de</link></image><lastBuildDate>Sun, 01 Sep 2024 03:31:04 +0000</lastBuildDate><managingEditor>ZTY</managingEditor><ttl>60</ttl><webMaster>ZTY</webMaster><item><title>PyQt5 支持 fcitx5 输入法</title><link>https://zty012.de/post/PyQt5%20-zhi-chi-%20fcitx5%20-shu-ru-fa.html</link><description>首先安装包 `fcitx5-qt`&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZTY</title><link>https://zty012.de</link><description>ZTY 的个人博客</description><copyright>ZTY</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/89395757?v=4</url><title>avatar</title><link>https://zty012.de</link></image><lastBuildDate>Tue, 24 Sep 2024 11:23:46 +0000</lastBuildDate><managingEditor>ZTY</managingEditor><ttl>60</ttl><webMaster>ZTY</webMaster><item><title>Android Platform Tools 相关环境变量</title><link>https://zty012.de/post/Android%20Platform%20Tools%20-xiang-guan-huan-jing-bian-liang.html</link><description>```bash&#13;
+export ANDROID_HOME=/home/&lt;user&gt;/Android/Sdk&#13;
+export ANDROID_NDK=/opt/android-ndk&#13;
+export NDK_HOME=/opt/android-ndk&#13;
+export ANDROID_NDK_HOME=/opt/android-ndk&#13;
+export ANDROID_NDK_ROOT=/opt/android-ndk&#13;
+```。</description><guid isPermaLink="true">https://zty012.de/post/Android%20Platform%20Tools%20-xiang-guan-huan-jing-bian-liang.html</guid><pubDate>Tue, 24 Sep 2024 11:23:18 +0000</pubDate></item><item><title>PyQt5 支持 fcitx5 输入法</title><link>https://zty012.de/post/PyQt5%20-zhi-chi-%20fcitx5%20-shu-ru-fa.html</link><description>首先安装包 `fcitx5-qt`&#13;
 &#13;
 ```bash&#13;
 sudo pacman -S fcitx5-qt&#13;
