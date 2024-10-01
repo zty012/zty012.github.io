@@ -1,5 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZTY</title><link>https://zty012.de</link><description>ZTY 的个人博客</description><copyright>ZTY</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/89395757?v=4</url><title>avatar</title><link>https://zty012.de</link></image><lastBuildDate>Sun, 29 Sep 2024 16:13:52 +0000</lastBuildDate><managingEditor>ZTY</managingEditor><ttl>60</ttl><webMaster>ZTY</webMaster><item><title>Android 隐藏状态栏和导航栏</title><link>https://zty012.de/post/Android%20-yin-cang-zhuang-tai-lan-he-dao-hang-lan.html</link><description>修改 theme 文件&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZTY</title><link>https://zty012.de</link><description>ZTY 的个人博客</description><copyright>ZTY</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/89395757?v=4</url><title>avatar</title><link>https://zty012.de</link></image><lastBuildDate>Tue, 01 Oct 2024 07:28:41 +0000</lastBuildDate><managingEditor>ZTY</managingEditor><ttl>60</ttl><webMaster>ZTY</webMaster><item><title>JS 获取文字实际宽度</title><link>https://zty012.de/post/JS%20-huo-qu-wen-zi-shi-ji-kuan-du.html</link><description>```ts&#13;
+export function getTextSize(text: string, size: number): Vector {&#13;
+  const canvas = document.createElement('canvas');&#13;
+  const context = canvas.getContext('2d');&#13;
+  if (!context) {&#13;
+    throw new Error('Failed to get canvas context');&#13;
+  }&#13;
+  context.font = `${size}px system-ui`;&#13;
+  const metrics = context.measureText(text);&#13;
+  return new Vector(metrics.width, size);&#13;
+}&#13;
+```。</description><guid isPermaLink="true">https://zty012.de/post/JS%20-huo-qu-wen-zi-shi-ji-kuan-du.html</guid><pubDate>Tue, 01 Oct 2024 06:07:38 +0000</pubDate></item><item><title>Android 隐藏状态栏和导航栏</title><link>https://zty012.de/post/Android%20-yin-cang-zhuang-tai-lan-he-dao-hang-lan.html</link><description>修改 theme 文件&#13;
 &#13;
 ```xml&#13;
 &lt;resources&gt;&#13;
