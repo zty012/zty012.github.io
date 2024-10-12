@@ -1,5 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZTY</title><link>https://zty012.de</link><description>ZTY 的个人博客</description><copyright>ZTY</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/89395757?v=4</url><title>avatar</title><link>https://zty012.de</link></image><lastBuildDate>Mon, 07 Oct 2024 16:14:21 +0000</lastBuildDate><managingEditor>ZTY</managingEditor><ttl>60</ttl><webMaster>ZTY</webMaster><item><title>Tauri v2 窗口没反应</title><link>https://zty012.de/post/Tauri%20v2%20-chuang-kou-mei-fan-ying.html</link><description>现象：窗口是透明的，完全没反应&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZTY</title><link>https://zty012.de</link><description>ZTY 的个人博客</description><copyright>ZTY</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/89395757?v=4</url><title>avatar</title><link>https://zty012.de</link></image><lastBuildDate>Sat, 12 Oct 2024 11:43:13 +0000</lastBuildDate><managingEditor>ZTY</managingEditor><ttl>60</ttl><webMaster>ZTY</webMaster><item><title>Nautilus 配置“在终端中打开“选项</title><link>https://zty012.de/post/Nautilus%20-pei-zhi-%E2%80%9C-zai-zhong-duan-zhong-da-kai-%E2%80%9C-xuan-xiang.html</link><description>首先需要安装一个插件 [Stunkymonkey/nautilus-open-any-terminal](https://github.com/Stunkymonkey/nautilus-open-any-terminal)，我这边用的是 AUR 安装&#13;
+&#13;
+然后用 `dconf-editor`，编辑插件的配置&#13;
+&#13;
+![image](https://github.com/user-attachments/assets/0024de1c-4957-4bb1-b1aa-ab8ac19f415f)&#13;
+&#13;
+其中 `custom-local-command` 可以填写终端可执行文件的路径，如果在 PATH 里面可以直接写文件名，比如 `foot`&#13;
+&#13;
+然后打开 Nautilus，发现插件根本没用，找到了这篇 Issue [#125](https://github.com/Stunkymonkey/nautilus-open-any-terminal/issues/125)&#13;
+&#13;
+执行 `nautilus -q`，然后再打开 Nautilus，就可以用了。</description><guid isPermaLink="true">https://zty012.de/post/Nautilus%20-pei-zhi-%E2%80%9C-zai-zhong-duan-zhong-da-kai-%E2%80%9C-xuan-xiang.html</guid><pubDate>Sat, 12 Oct 2024 11:42:47 +0000</pubDate></item><item><title>Tauri v2 窗口没反应</title><link>https://zty012.de/post/Tauri%20v2%20-chuang-kou-mei-fan-ying.html</link><description>现象：窗口是透明的，完全没反应&#13;
 &#13;
 首先在 `lib.rs` 里面添加打开 Devtools 的代码&#13;
 &#13;
