@@ -1,0 +1,1 @@
+编辑 `~/.config/mimeapps.list`，找到 `inode/directory`，修改值为你的文件管理器比如 `org.gnome.Nautilus.desktop`
