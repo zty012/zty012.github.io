@@ -1,10 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZTY</title><link>https://zty012.de</link><description>ZTY 的个人博客</description><copyright>ZTY</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/89395757?v=4</url><title>avatar</title><link>https://zty012.de</link></image><lastBuildDate>Tue, 29 Oct 2024 12:34:21 +0000</lastBuildDate><managingEditor>ZTY</managingEditor><ttl>60</ttl><webMaster>ZTY</webMaster><item><title>Linux Chrome 无法播放视频</title><link>https://zty012.de/post/Linux%20Chrome%20-wu-fa-bo-fang-shi-pin.html</link><description>参考 [this comment](https://bbs.archlinux.org/viewtopic.php?pid=1650542#p1650542)&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZTY</title><link>https://zty012.de</link><description>ZTY 的个人博客</description><copyright>ZTY</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/89395757?v=4</url><title>avatar</title><link>https://zty012.de</link></image><lastBuildDate>Tue, 29 Oct 2024 12:54:10 +0000</lastBuildDate><managingEditor>ZTY</managingEditor><ttl>60</ttl><webMaster>ZTY</webMaster><item><title>Linux Chrome 无法播放视频</title><link>https://zty012.de/post/Linux%20Chrome%20-wu-fa-bo-fang-shi-pin.html</link><description>参考 [this comment](https://bbs.archlinux.org/viewtopic.php?pid=1650542#p1650542)&#13;
 &#13;
 ```sh&#13;
 rm -rf ~/.config/chromium/GrShaderCache&#13;
 rm -rf ~/.config/chromium/Default/GPUCache&#13;
-```。</description><guid isPermaLink="true">https://zty012.de/post/Linux%20Chrome%20-wu-fa-bo-fang-shi-pin.html</guid><pubDate>Tue, 29 Oct 2024 12:33:48 +0000</pubDate></item><item><title>Linux 脚本: 安装最近的指定个 apk 文件</title><link>https://zty012.de/post/Linux%20-jiao-ben--%20-an-zhuang-zui-jin-de-zhi-ding-ge-%20apk%20-wen-jian.html</link><description>```sh&#13;
+```&#13;
+&#13;
+如果还不行:&#13;
+&#13;
+[this telegram message](https://t.me/archlinuxcn_group/3354458)。</description><guid isPermaLink="true">https://zty012.de/post/Linux%20Chrome%20-wu-fa-bo-fang-shi-pin.html</guid><pubDate>Tue, 29 Oct 2024 12:33:48 +0000</pubDate></item><item><title>Linux 脚本: 安装最近的指定个 apk 文件</title><link>https://zty012.de/post/Linux%20-jiao-ben--%20-an-zhuang-zui-jin-de-zhi-ding-ge-%20apk%20-wen-jian.html</link><description>```sh&#13;
 #!/bin/zsh&#13;
 &#13;
 # 检查参数是否有效&#13;
