@@ -1,5 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZTY</title><link>https://zty012.de</link><description>ZTY 的个人博客</description><copyright>ZTY</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/89395757?v=4</url><title>avatar</title><link>https://zty012.de</link></image><lastBuildDate>Tue, 29 Oct 2024 12:54:10 +0000</lastBuildDate><managingEditor>ZTY</managingEditor><ttl>60</ttl><webMaster>ZTY</webMaster><item><title>Linux Chrome 无法播放视频</title><link>https://zty012.de/post/Linux%20Chrome%20-wu-fa-bo-fang-shi-pin.html</link><description>参考 [this comment](https://bbs.archlinux.org/viewtopic.php?pid=1650542#p1650542)&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>ZTY</title><link>https://zty012.de</link><description>ZTY 的个人博客</description><copyright>ZTY</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/89395757?v=4</url><title>avatar</title><link>https://zty012.de</link></image><lastBuildDate>Sat, 09 Nov 2024 06:57:30 +0000</lastBuildDate><managingEditor>ZTY</managingEditor><ttl>60</ttl><webMaster>ZTY</webMaster><item><title>批量重命名 APK 文件为应用名称</title><link>https://zty012.de/post/pi-liang-zhong-ming-ming-%20APK%20-wen-jian-wei-ying-yong-ming-cheng.html</link><description>&gt; [!WARNING]&#13;
+&gt; 此脚本需要安装 Android Build Tools，并且将 `~/Android/Sdk/build-tools/35.0.0/aapt` 替换为你的 aapt 位置&#13;
+&#13;
+```bash&#13;
+for apk in *.apk; do&#13;
+    label=$(~/Android/Sdk/build-tools/35.0.0/aapt dump badging '$apk' | grep -Po '^application-label:'\K.*?(?='$)')&#13;
+    if [[ -z '$label' ]]; then&#13;
+        echo 'error $apk'&#13;
+        continue&#13;
+    fi&#13;
+    mv '$apk' '$label.apk'&#13;
+    echo '$apk -&gt; $label.apk'&#13;
+done&#13;
+```。</description><guid isPermaLink="true">https://zty012.de/post/pi-liang-zhong-ming-ming-%20APK%20-wen-jian-wei-ying-yong-ming-cheng.html</guid><pubDate>Sat, 09 Nov 2024 06:57:08 +0000</pubDate></item><item><title>Linux Chrome 无法播放视频</title><link>https://zty012.de/post/Linux%20Chrome%20-wu-fa-bo-fang-shi-pin.html</link><description>参考 [this comment](https://bbs.archlinux.org/viewtopic.php?pid=1650542#p1650542)&#13;
 &#13;
 ```sh&#13;
 rm -rf ~/.config/chromium/GrShaderCache&#13;
