@@ -13,6 +13,8 @@
 <meta name="description" content="> [!WARNING]
 > 此脚本需要安装 Android Build Tools，并且将 `~/Android/Sdk/build-tools/35.0.0/aapt` 替换为你的 aapt 位置
 
+> 建议运行脚本以后，把 `application-label` 改成 `application-label-zh-CN`，这样文件名就是中文了
+
 ```bash
 for apk in *.apk; do
     label=$(~/Android/Sdk/build-tools/35.0.0/aapt dump badging '$apk' | grep -Po '^application-label:'\K.*?(?='$)')
@@ -27,6 +29,8 @@ done
 <meta property="og:title" content="批量重命名 APK 文件为应用名称">
 <meta property="og:description" content="> [!WARNING]
 > 此脚本需要安装 Android Build Tools，并且将 `~/Android/Sdk/build-tools/35.0.0/aapt` 替换为你的 aapt 位置
+
+> 建议运行脚本以后，把 `application-label` 改成 `application-label-zh-CN`，这样文件名就是中文了
 
 ```bash
 for apk in *.apk; do
@@ -111,6 +115,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="content">
 <div class="markdown-body" id="postBody"><div class="markdown-alert markdown-alert-warning"><p class="markdown-alert-title"><svg class="octicon octicon-alert mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Warning</p><p>此脚本需要安装 Android Build Tools，并且将 <code class="notranslate">~/Android/Sdk/build-tools/35.0.0/aapt</code> 替换为你的 aapt 位置</p>
 </div>
+<blockquote>
+<p>建议运行脚本以后，把 <code class="notranslate">application-label</code> 改成 <code class="notranslate">application-label-zh-CN</code>，这样文件名就是中文了</p>
+</blockquote>
 <div class="highlight highlight-source-shell"><pre class="notranslate"><span class="pl-k">for</span> <span class="pl-smi">apk</span> <span class="pl-k">in</span> <span class="pl-k">*</span>.apk<span class="pl-k">;</span> <span class="pl-k">do</span>
     label=<span class="pl-s"><span class="pl-pds">$(</span>~/Android/Sdk/build-tools/35.0.0/aapt dump badging <span class="pl-s"><span class="pl-pds">"</span><span class="pl-smi">$apk</span><span class="pl-pds">"</span></span> <span class="pl-k">|</span> grep -Po <span class="pl-s"><span class="pl-pds">"</span>^application-label:'\K.*?(?='$)<span class="pl-pds">"</span></span><span class="pl-pds">)</span></span>
     <span class="pl-k">if</span> [[ <span class="pl-k">-z</span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-smi">$label</span><span class="pl-pds">"</span></span> ]]<span class="pl-k">;</span> <span class="pl-k">then</span>
