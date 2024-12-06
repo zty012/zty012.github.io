@@ -193,9 +193,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <span class="pl-k">import</span> <span class="pl-v">PyQt5</span>
 
 <span class="pl-c"># 修复fcitx5输入法</span>
-<span class="pl-k">if</span> <span class="pl-s1">platform</span>.<span class="pl-en">system</span>() <span class="pl-c1">==</span> <span class="pl-s">"Linux"</span>:
+<span class="pl-k">if</span> <span class="pl-s1">platform</span>.<span class="pl-c1">system</span>() <span class="pl-c1">==</span> <span class="pl-s">"Linux"</span>:
     <span class="pl-s1">target_path</span> <span class="pl-c1">=</span> (
-        <span class="pl-v">Path</span>(<span class="pl-v">PyQt5</span>.<span class="pl-s1">__file__</span>).<span class="pl-s1">parent</span>
+        <span class="pl-en">Path</span>(<span class="pl-v">PyQt5</span>.<span class="pl-c1">__file__</span>).<span class="pl-c1">parent</span>
         <span class="pl-c1">/</span> <span class="pl-s">"Qt5"</span>
         <span class="pl-c1">/</span> <span class="pl-s">"plugins"</span>
         <span class="pl-c1">/</span> <span class="pl-s">"platforminputcontexts"</span>
@@ -203,15 +203,15 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     )
     <span class="pl-s1">source_path</span> <span class="pl-c1">=</span> (
         <span class="pl-c"># 这里是so文件的路径</span>
-        <span class="pl-v">Path</span>(<span class="pl-s1">__file__</span>)....... <span class="pl-c1">/</span> ... <span class="pl-c1">/</span> ...
+        <span class="pl-en">Path</span>(<span class="pl-s1">__file__</span>)....... <span class="pl-c1">/</span> ... <span class="pl-c1">/</span> ...
     )
-    <span class="pl-k">if</span> <span class="pl-c1">not</span> <span class="pl-s1">target_path</span>.<span class="pl-en">exists</span>():
+    <span class="pl-k">if</span> <span class="pl-c1">not</span> <span class="pl-s1">target_path</span>.<span class="pl-c1">exists</span>():
         <span class="pl-en">log</span>(<span class="pl-s">f"修复fcitx5输入法: Copy <span class="pl-s1"><span class="pl-kos">{</span><span class="pl-s1">source_path</span><span class="pl-kos">}</span></span> to <span class="pl-s1"><span class="pl-kos">{</span><span class="pl-s1">target_path</span><span class="pl-kos">}</span></span>"</span>)
-        <span class="pl-s1">shutil</span>.<span class="pl-en">copy</span>(<span class="pl-s1">source_path</span>, <span class="pl-s1">target_path</span>)</pre></div>
+        <span class="pl-s1">shutil</span>.<span class="pl-c1">copy</span>(<span class="pl-s1">source_path</span>, <span class="pl-s1">target_path</span>)</pre></div>
 <h2>支持 PyInstaller</h2>
 <p>在 PyInstaller 参数里面加上 <code class="notranslate">--add-data &lt;so文件路径&gt;:PyQt5/Qt5/plugins/platforminputcontexts</code></p>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-c"># 打包</span>
-<span class="pl-v">PyInstaller</span>.<span class="pl-s1">__main__</span>.<span class="pl-en">run</span>(
+<span class="pl-v">PyInstaller</span>.<span class="pl-c1">__main__</span>.<span class="pl-c1">run</span>(
     [
         <span class="pl-s">"--onefile"</span>,
         <span class="pl-s">"--windowed"</span>,
@@ -221,7 +221,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         <span class="pl-s">f"<span class="pl-s1"><span class="pl-kos">{</span><span class="pl-s1">path</span> <span class="pl-c1">/</span> <span class="pl-s">'lib'</span><span class="pl-c1">/</span> <span class="pl-s">'libfcitx5platforminputcontextplugin.so'</span><span class="pl-kos">}</span></span>:PyQt5/Qt5/plugins/platforminputcontexts"</span>,
         <span class="pl-s">"-n"</span>,
         <span class="pl-s">"project-graph"</span>,
-        (<span class="pl-s1">path</span> <span class="pl-c1">/</span> <span class="pl-s">"src"</span> <span class="pl-c1">/</span> <span class="pl-s">"_package.py"</span>).<span class="pl-en">as_posix</span>(),
+        (<span class="pl-s1">path</span> <span class="pl-c1">/</span> <span class="pl-s">"src"</span> <span class="pl-c1">/</span> <span class="pl-s">"_package.py"</span>).<span class="pl-c1">as_posix</span>(),
     ]
 )</pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
